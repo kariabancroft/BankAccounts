@@ -7,5 +7,13 @@ module Bank
       @id = id
       @balance = balance
     end
+
+    def withdrawl(amount)
+
+    end
+
+    def deposit(amount)
+      
+    end
   end
 end
