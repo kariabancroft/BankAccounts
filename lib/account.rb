@@ -9,11 +9,11 @@ module Bank
     end
 
     def withdrawl(amount)
-
+      @balance -= amount
     end
 
     def deposit(amount)
-      
+      @balance += amount
     end
   end
 end
