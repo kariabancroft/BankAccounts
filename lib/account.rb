@@ -8,7 +8,7 @@ module Bank
       @balance = balance
     end
 
-    def withdrawl(amount)
+    def withdraw(amount)
       raise ArgumentError.new("amount must be >= 0") if amount < 0
 
       @balance -= amount
@@ -17,7 +17,6 @@ module Bank
     def deposit(amount)
       raise ArgumentError.new("amount must be >= 0") if amount < 0
 
-      
       @balance += amount
     end
   end
