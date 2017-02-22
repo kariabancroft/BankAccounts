@@ -11,7 +11,12 @@ module Bank
     def withdraw(amount)
       raise ArgumentError.new("amount must be >= 0") if amount < 0
 
-      @balance -= amount
+      if @balance - amount < 0
+        puts "Oh no! Account will go negative!"
+        return @balance
+      else
+          @balance -= amount
+      end
     end
 
     def deposit(amount)
